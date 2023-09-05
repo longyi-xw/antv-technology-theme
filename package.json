@@ -1,0 +1,56 @@
+{
+  "name": "antv-technology-theme",
+  "version": "1.0.0",
+  "description": "ant-design-vue 科技风格主题",
+  "main": "dist/theme.css",
+  "author": "zhl",
+  "license": "MIT",
+  "keywords": [
+    "ant",
+    "design",
+    "antd",
+    "vue",
+    "theme",
+    "less",
+    "ui",
+    "plugins"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && cross-env NODE_ENV=production && webpack --config webpack.config.js",
+    "start": "npm run build && webpack-dev-server --config webpack.config.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vueComponent/ant-design-vue.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.15",
+    "@babel/plugin-transform-runtime": "^7.22.15",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/runtime": "^7.22.15",
+    "@babel/runtime-corejs2": "^7.22.15",
+    "ant-design-vue": "^1.7.4",
+    "babel-loader": "^9.1.3",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "less": "^4.2.0",
+    "less-loader": "^11.1.3",
+    "rimraf": "^5.0.1",
+    "style-loader": "^3.3.3",
+    "vue": "^2.6.0",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.0.0"
+  },
+  "peerDependencies": {
+    "ant-design-vue": "^1.7.4"
+  }
+}
