@@ -1,0 +1,25 @@
+@input-hover-border-color: #215f95;
+@input-color: #e7e7e7;
+
+.ant-input:focus {
+  border-color: @input-hover-border-color;
+  box-shadow: 0 0 0 2px rgba(181, 180, 219, 0.2);
+}
+
+.ant-input-group-addon > .ant-btn.ant-btn-primary {
+  border-color: @input-border-color;
+
+  &:hover {
+    color: @input-color;
+    border-color: @input-hover-border-color;
+    background-color: @component-background;
+  }
+}
+
+.ant-input-search-icon {
+  color: @input-color;
+
+  &:hover {
+    color: #95a2e7;
+  }
+}

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "ant-design-vue 科技风格主题",
   "main": "dist/theme.css",
-  "author": "zhl",
+  "author": "longyi",
   "license": "MIT",
   "keywords": [
     "ant",

@@ -1,0 +1,25 @@
+@border-color-split: #1d2a63;
+
+@menu-bg: transparent;
+@menu-item-color: #d3c9c9;
+@menu-highlight-color: #ffffff;
+@menu-item-active-bg: #a58add8c;
+@menu-item-active-border-width: 0;
+@menu-item-group-title-color: @menu-item-color;
+
+.ant-menu-submenu.ant-menu-submenu-popup > .ant-menu {
+  border-radius: 2px;
+  border: 1px solid #242850;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover {
+  border-bottom: 2px solid #a58add78;
+}
+
+.ant-menu-horizontal > .ant-menu-submenu-open,
+.ant-menu-horizontal > .ant-menu-submenu-active,
+.ant-menu-horizontal > .ant-menu-submenu:hover,
+.ant-menu-horizontal > .ant-menu-item-selected,
+.ant-menu-horizontal > .ant-menu-submenu-selected {
+  border-bottom: 2px solid @menu-item-active-bg;
+}
