@@ -1,0 +1,15 @@
+@modal-prefix-cls: ~'@{ant-prefix}-modal';
+
+.@{modal-prefix-cls} {
+  @component-background: #02002DBF;
+
+  &-content {
+    border: 1px solid #142056;
+    box-shadow: 0 4px 12px rgba(237, 236, 255, 0.15);
+    background-color: @component-background;
+  }
+
+  &-close:focus, .ant-modal-close:hover {
+    color: rgba(108, 124, 247, 0.75);
+  }
+}

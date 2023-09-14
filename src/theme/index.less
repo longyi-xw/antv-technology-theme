@@ -45,12 +45,12 @@
 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
 'Segoe UI Emoji', 'Segoe UI Symbol';
 @code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-@text-color: fade(@black, 65%);
-@text-color-secondary: fade(@black, 45%);
+@text-color: fade(@white, 65%);
+@text-color-secondary: fade(@white, 45%);
 @text-color-inverse: @white;
 @icon-color: inherit;
 @icon-color-hover: fade(@black, 75%);
-@heading-color: fade(#000, 85%);
+@heading-color: fade(@white, 85%);
 @heading-color-dark: fade(@white, 100%);
 @text-color-dark: fade(@white, 85%);
 @text-color-secondary-dark: fade(@white, 65%);
@@ -105,11 +105,11 @@
 @outline-width: 2px;
 @outline-color: @primary-color;
 
-@background-color-light: hsv(0, 0, 98%); // background of header and selected item
+@background-color-light: #0c2146; // background of header and selected item
 @background-color-base: hsv(0, 0, 96%); // Default grey background color
 
 // Disabled states
-@disabled-color: fade(#000, 25%);
+@disabled-color: fade(#fff, 75%);
 @disabled-bg: #584565;
 @disabled-color-dark: fade(#fff, 35%);
 
@@ -127,3 +127,9 @@
 @import "menu";
 @import "input";
 @import "select";
+@import "empty";
+@import "tab";
+@import "pagination";
+@import "table";
+@import "modal";
+@import "tree";

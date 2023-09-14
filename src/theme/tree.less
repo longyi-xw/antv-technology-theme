@@ -1,0 +1,9 @@
+@tree-prefix-cls: ~'@{ant-prefix}-tree';
+
+.@{tree-prefix-cls} {
+  @item-hover-bg: #11244f;
+
+  & li &-node-content-wrapper:hover {
+    background-color: @item-hover-bg;
+  }
+}
